@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Efecto Parallax con CSS</title>
+
+<style>
+
+* {
+    margin:0px;
+    padding:0px;
+	box-sizing:border-box;
+}
+    
+header{
+    width: 100%;
+	background-color:rgba(255,255,255,1.00);
+    position: fixed;
+    z-index: 9999;
+  
+}
+#cabecera{
+	max-width: 1000px;
+  	margin: 0px auto;
+	
+}
+    
+.image1 {
+    position:relative;
+    background: url('img/foto01.jpg') no-repeat fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px;
+   
+     
+}
+ 
+.image2 {
+    position:relative;
+    background: url('img/foto02.jpg') no-repeat fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px; 
+}
+ 
+.image3 {
+    position:relative;
+    background: url('img/foto03.jpg') no-repeat fixed;
+    background-position: center center;
+    
+    background-size: cover;
+    min-height: 500px; 
+}
+ 
+h1 {
+    color:rgba(0,0,0,1.00);
+    font-size: 60px;
+    font-weight: bold;
+    opacity:0.7;
+}
+ 
+h2{
+    color:red;
+    font-size: 55px;
+    text-align:center;
+    margin: 0 auto;
+    width: 600px;
+    position: absolute; /* hijo */
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    opacity:0.8;
+}
+ 
+.content { /* section */
+    width: 100%;
+	background-color:rgba(255,255,255,1.00);
+}
+article{
+	max-width: 1000px;
+	margin: 0 auto;	
+}
+p{
+	font-size:20px;
+	line-height:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+	<div id="cabecera">
+	    <h1>LOGOTIPO</h1>
+        <nav>Menú de la página</nav>
+    </div>
+</header>
+
+<div class="image1">
+    <h2>Texto1 entre secciones</h2>
+</div>
+
+<section class="content">
+<article>
+   <h1>LUNES</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu posuere dui. Phasellus ultrices rutrum viverra. Duis rhoncus elementum facilisis. Donec venenatis diam eu venenatis venenatis. Duis at erat ac nisl adipiscing varius. Integer tincidunt neque egestas quam sodales tempus. Nulla tristique nisi facilisis congue pellentesque. Sed orci elit, dignissim accumsan nibh ut, vulputate fermentum est. Curabitur in ipsum viverra, interdum diam vel, aliquet lorem. Pellentesque lobortis, mauris pellentesque faucibus pretium, nulla nisi eleifend justo, rutrum pulvinar neque magna eget felis.
+
+Cras aliquet sem quis placerat lacinia. Ut quis libero nec nibh malesuada vulputate sed lacinia justo. Quisque sodales felis quam, vel consequat neque ornare vel. Nam faucibus aliquam leo, a pulvinar metus dignissim vitae. Etiam eu congue risus. Quisque hendrerit tellus magna. Morbi eu mi dolor. Phasellus hendrerit tellus et leo sagittis ultrices. Cras nibh nunc, convallis sed erat ac, volutpat luctus ligula. Sed id mi scelerisque, posuere orci malesuada, sagittis lectus. Maecenas massa lorem, porttitor eu ipsum ut, aliquet dictum est. Pellentesque a enim et arcu egestas viverra. Proin sed elementum sapien, et euismod arcu. Suspendisse eu laoreet ligula.
+
+Pellentesque euismod cursus nulla non luctus. Praesent id tincidunt leo. Nulla in viverra diam. Nunc fringilla diam id erat dignissim faucibus. Donec mattis eget massa laoreet pharetra. Maecenas in massa feugiat, elementum dolor vitae, consequat sem. Ut vel consectetur magna. Phasellus dui nulla, elementum vitae faucibus id, consequat ac ante. Nulla consectetur, ante sit amet porta egestas, orci diam tincidunt urna, nec eleifend elit augue quis tortor. Etiam nec elit sit amet mi viverra vehicula.</p>
+</article>
+</section>
+ 
+<div class="image2">
+    <h2>Texto2 entre secciones</h2>
+</div>
+ 
+<section class="content">
+<article>
+    <p>Suspendisse porta non sem eu eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam id augue quis nibh egestas ultrices eget et justo. Pellentesque a tempor quam. Nam blandit turpis nisi, at sodales quam convallis vel. Aliquam rhoncus, massa ut gravida auctor, ipsum odio consequat orci, in laoreet felis nulla ut erat. Phasellus venenatis velit ut magna imperdiet hendrerit. Nullam dui turpis, venenatis sit amet eleifend non, pulvinar eu quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+</p>
+</article>
+</section>
+ 
+<div class="image3"> 
+     <h2>Texto3 entre secciones</h2>
+</div>
+
+<footer class="content">
+
+<p>Pie de página</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu posuere dui. Phasellus ultrices rutrum viverra. Duis rhoncus elementum facilisis. Donec venenatis diam eu venenatis venenatis. Duis at erat ac nisl adipiscing varius. Integer tincidunt neque egestas quam sodales tempus. Nulla tristique nisi facilisis congue pellentesque. Sed orci elit, dignissim accumsan nibh ut, vulputate fermentum est.</p>
+
+</footer>
+
+
+</body>
+</html>
