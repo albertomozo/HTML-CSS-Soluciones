@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+    * {
+        margin : 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family:sans-serif;
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 200em;
+    }
+    
+    section {
+        border: 2px dashed steelblue;
+        width: 50%;
+        height: 440px;
+        margin:  2em;
+    }
+    
+    div {
+        border-radius: 5px;
+        color: #444;
+        padding: .5em;
+        font-weight: bold;
+        text-align: center;
+        background: rgba(173, 216, 230);
+        opacity: 1;
+        width:100px;
+        height: 100px;
+        position: relative;
+    }
+     /* Posicionamiento */
+    
+    .uno {
+        background: palegreen;
+        top : 200px;
+        left: 50px;
+        z-index : 100;
+        
+    }
+    
+    .dos {
+        background: tomato;
+        /* opacity : 0; */
+        /* display : none */
+        /* visibility: hidden */
+        .circulo {
+            background-color: rgb(26, 129, 21);
+       }
+        
+    }
+    .tres{
+       background: lightblue;
+
+       .circulo {
+            background-color: yellow;
+       }
+
+
+    }
+
+    #menu {
+        display : block;
+       position:fixed;
+       top:0px;
+    }
+    #menu ul li {
+        display:inline;
+        }
+    img {
+        display:none;
+    }
+    .circulo {
+        width:10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        position : absolute;
+        top:50%;
+        left:50%;
+    }
+    #mensaje {
+        position : fixed;
+        bottom : 0;
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        color : white;
+        z-index:10000;
+    }
+    #m-1 {
+        float:left;
+    }
+    #m-2 {
+        float:right;
+    }
+    [id*="m-"]{
+        background-color:red;
+    }
+    </style>
+</head>
+<body> 
+    
+   <h1>Position CSS</h1>
+   <div id="mensaje">
+    <div id="m-1">rechazar</div>
+    <div id="m-2">aceptar</div>
+   </div>
+   <nav id="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Opcion 1</a></li>
+            <li><a href="#">Opcion 2</a></li>
+        </ul>
+    </nav>
+
+	<section>
+		<div class="uno">1
+            <div class="circulo"></div>
+
+        </div>
+		<div class="dos">2
+            <div class="circulo"></div>
+        </div>
+
+		<div class="tres">3
+            <div class="circulo"></div>
+        </div>
+	</section>
+    
+</body>
+</html>
